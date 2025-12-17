@@ -63,7 +63,7 @@ Mô hình được đánh giá bằng walk-forward validation và Leave-One-Year
 
 ## Demo
 
-Xem video demo đính kèm để hiểu rõ hơn về hệ thống.
+https://drive.google.com/file/d/1PCiZJN6SZmNzdGBmOJdQKcBeiOcm2NXB/view?usp=sharing
 
 ## Team & Authors
 
