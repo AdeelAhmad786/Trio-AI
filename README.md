@@ -71,4 +71,4 @@ Xem video demo đính kèm để hiểu rõ hơn về hệ thống.
 - **Tăng Tuấn Việt** – Data & Research
 - **Lê Thị Nga** – Data & Research
 
-Pylife Challenge Submission.
+
