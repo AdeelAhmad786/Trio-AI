@@ -65,6 +65,10 @@ Mô hình được đánh giá bằng walk-forward validation và Leave-One-Year
 
 Xem video demo đính kèm để hiểu rõ hơn về hệ thống.
 
-## Lưu ý
+## Team & Authors
 
-Đây là prototype được phát triển cho mục đích thi đấu.
+- **Nguyễn Hoàng Tùng** – Machine Learning, Full-stack Developer
+- **[Tăng Tuấn Việt]** – Data & Research
+- **[lê Thị Nga]** – Data & Research
+
+Pylife Challenge Submission.
