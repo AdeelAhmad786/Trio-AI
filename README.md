@@ -68,7 +68,7 @@ Xem video demo đính kèm để hiểu rõ hơn về hệ thống.
 ## Team & Authors
 
 - **Nguyễn Hoàng Tùng** – Machine Learning, Full-stack Developer
-- **[Tăng Tuấn Việt]** – Data & Research
-- **[Lê Thị Nga]** – Data & Research
+- **Tăng Tuấn Việt** – Data & Research
+- **Lê Thị Nga** – Data & Research
 
 Pylife Challenge Submission.
