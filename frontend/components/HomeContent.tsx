@@ -822,62 +822,6 @@ export default function HomeContent() {
             }}
           />
 
-          {/* Mobile Province Card - compact & optimized for small screens */}
-          {isSettled && selectedProvince && (
-            <div className="vietnam-insight-card absolute z-20 lg:hidden left-1/2 -translate-x-1/2 bottom-16 xs:bottom-20 sm:bottom-24 w-[calc(100%-2rem)] max-w-[320px] sm:max-w-none sm:w-auto">
-              <Link
-                href="/forecast"
-                className={`group flex items-center gap-2.5 sm:gap-3 rounded-xl sm:rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 transition-all duration-300 active:scale-[0.98] ${
-                  theme === "dark"
-                    ? "bg-black/60 border border-white/10 backdrop-blur-xl"
-                    : "bg-white/80 border border-slate-200/80 shadow-lg backdrop-blur-xl"
-                }`}
-              >
-                {/* Pulse indicator - compact */}
-                <div
-                  className={`flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl flex-shrink-0 ${
-                    theme === "dark" ? "bg-emerald-500/10" : "bg-emerald-50"
-                  }`}
-                >
-                  <div className="relative">
-                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500"></div>
-                    <div className="absolute inset-0 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500 animate-ping"></div>
-                  </div>
-                </div>
-
-                {/* Content - compact */}
-                <div className="flex-1 min-w-0 text-left">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[12px] sm:text-[14px]">🇻🇳</span>
-                    <p
-                      className={`text-[12px] sm:text-[13px] font-medium truncate ${
-                        theme === "dark" ? "text-white/90" : "text-slate-800"
-                      }`}
-                    >
-                      {language === "vi" ? "Cà phê · Đắk Lắk" : "Coffee · Dak Lak"}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Arrow only on mobile */}
-                <svg
-                  className={`w-4 h-4 flex-shrink-0 ${
-                    theme === "dark" ? "text-white/30" : "text-slate-400"
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </Link>
-            </div>
-          )}
         </div>
 
         {/* ═══════════════════════════════════════════════════════════════════════
@@ -981,8 +925,8 @@ export default function HomeContent() {
             </Link>
           </div>
 
-          {/* Province Yield Card - Desktop only, below CTA */}
-          <div className="hidden lg:block mt-10 h-[80px]">
+          {/* Province Yield Card - Responsive, same on all screens */}
+          <div className="mt-6 sm:mt-8 lg:mt-10 min-h-[60px] sm:min-h-[70px] lg:min-h-[80px]">
             <div
               className={`transition-all duration-1000 ease-out ${
                 isSettled && selectedProvince
@@ -993,28 +937,28 @@ export default function HomeContent() {
               {selectedProvince && (
                 <Link
                   href="/forecast"
-                  className={`group inline-flex items-center gap-4 rounded-2xl px-5 py-4 transition-all duration-300 ${
+                  className={`group inline-flex items-center gap-2.5 sm:gap-3 lg:gap-4 rounded-xl sm:rounded-2xl px-3 sm:px-4 lg:px-5 py-2.5 sm:py-3 lg:py-4 transition-all duration-300 active:scale-[0.98] ${
                     theme === "dark"
-                      ? "bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.05] hover:border-white/[0.1]"
-                      : "bg-white/60 border border-slate-200/60 hover:bg-white/80 hover:border-slate-200 shadow-sm"
+                      ? "bg-black/50 backdrop-blur-xl border border-white/[0.08] hover:bg-black/60 hover:border-white/[0.12]"
+                      : "bg-white/70 backdrop-blur-xl border border-slate-200/80 hover:bg-white/90 hover:border-slate-300 shadow-lg"
                   }`}
                 >
                   {/* Scanning indicator */}
                   <div
-                    className={`flex items-center justify-center w-10 h-10 rounded-xl ${
+                    className={`flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 rounded-lg sm:rounded-xl ${
                       theme === "dark" ? "bg-emerald-500/10" : "bg-emerald-50"
                     }`}
                   >
                     <div className="relative">
-                      <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                      <div className="absolute inset-0 w-2 h-2 rounded-full bg-emerald-500 animate-ping"></div>
+                      <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500"></div>
+                      <div className="absolute inset-0 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500 animate-ping"></div>
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="text-left">
                     <p
-                      className={`text-[10px] uppercase tracking-widest mb-1 ${
+                      className={`text-[9px] sm:text-[10px] uppercase tracking-widest mb-0.5 sm:mb-1 ${
                         theme === "dark"
                           ? "text-emerald-400/70"
                           : "text-emerald-600/70"
@@ -1024,10 +968,10 @@ export default function HomeContent() {
                         ? "Vị trí phát hiện"
                         : "Location detected"}
                     </p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[15px]">🇻🇳</span>
+                    <div className="flex items-center gap-1.5 sm:gap-2">
+                      <span className="text-[13px] sm:text-[14px] lg:text-[15px]">🇻🇳</span>
                       <p
-                        className={`text-[14px] font-medium ${
+                        className={`text-[12px] sm:text-[13px] lg:text-[14px] font-medium ${
                           theme === "dark" ? "text-white/90" : "text-slate-800"
                         }`}
                       >
@@ -1040,14 +984,14 @@ export default function HomeContent() {
 
                   {/* CTA */}
                   <div
-                    className={`flex items-center gap-1.5 ml-2 pl-4 border-l ${
+                    className={`flex items-center gap-1 sm:gap-1.5 ml-1 sm:ml-2 pl-2.5 sm:pl-3 lg:pl-4 border-l ${
                       theme === "dark"
-                        ? "border-white/[0.06]"
+                        ? "border-white/[0.08]"
                         : "border-slate-200"
                     }`}
                   >
                     <span
-                      className={`text-[12px] font-medium ${
+                      className={`text-[10px] sm:text-[11px] lg:text-[12px] font-medium ${
                         theme === "dark"
                           ? "text-white/50 group-hover:text-white/70"
                           : "text-slate-500 group-hover:text-slate-700"
@@ -1056,7 +1000,7 @@ export default function HomeContent() {
                       {language === "vi" ? "Xem dự báo" : "View forecast"}
                     </span>
                     <svg
-                      className={`w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 ${
+                      className={`w-3 h-3 sm:w-3.5 sm:h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 ${
                         theme === "dark" ? "text-white/40" : "text-slate-400"
                       }`}
                       fill="none"
