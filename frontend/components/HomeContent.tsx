@@ -824,59 +824,94 @@ export default function HomeContent() {
 
           {/* Mobile Province Card - positioned at bottom */}
           {isSettled && selectedProvince && (
-            <div className="vietnam-insight-card absolute z-20 lg:hidden left-3 right-3 sm:left-4 sm:right-4 bottom-28 sm:bottom-32">
-              <div
-                className={`backdrop-blur-xl border rounded-2xl px-4 py-3 shadow-2xl ${
+            <div className="vietnam-insight-card absolute z-20 lg:hidden left-4 right-4 bottom-20 sm:bottom-24">
+              <Link
+                href="/forecast"
+                className={`block backdrop-blur-xl border rounded-2xl px-4 py-3.5 shadow-2xl transition-all duration-300 active:scale-[0.98] ${
                   theme === "dark"
-                    ? "bg-black/70 border-white/10"
-                    : "bg-white/90 border-slate-200"
+                    ? "bg-black/80 border-white/10 hover:bg-black/90"
+                    : "bg-white/95 border-slate-200 hover:bg-white shadow-lg"
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-[24px]">
-                    {selectedProvince.crop === "Coffee"
-                      ? "☕"
-                      : selectedProvince.crop === "Rice"
-                      ? "🌾"
-                      : selectedProvince.crop === "Tea"
-                      ? "🍵"
-                      : selectedProvince.crop === "Dragon Fruit"
-                      ? "🐉"
-                      : selectedProvince.crop === "Rubber"
-                      ? "🌳"
-                      : selectedProvince.crop === "Pepper"
-                      ? "🌶️"
-                      : "🌱"}
-                  </span>
-                  <div className="flex-1">
+                  {/* Icon with pulse indicator */}
+                  <div className="relative">
+                    <span className="text-[28px]">
+                      {selectedProvince.crop === "Coffee"
+                        ? "☕"
+                        : selectedProvince.crop === "Rice"
+                        ? "🌾"
+                        : selectedProvince.crop === "Tea"
+                        ? "🍵"
+                        : selectedProvince.crop === "Dragon Fruit"
+                        ? "🐉"
+                        : selectedProvince.crop === "Rubber"
+                        ? "🌳"
+                        : selectedProvince.crop === "Pepper"
+                        ? "🌶️"
+                        : "🌱"}
+                    </span>
+                    <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500">
+                      <div className="absolute inset-0 rounded-full bg-emerald-500 animate-ping"></div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 min-w-0">
                     <p
-                      className={`text-[11px] font-medium ${
-                        theme === "dark" ? "text-white/50" : "text-slate-500"
+                      className={`text-[10px] uppercase tracking-wider font-medium ${
+                        theme === "dark"
+                          ? "text-emerald-400/70"
+                          : "text-emerald-600/80"
+                      }`}
+                    >
+                      {language === "vi"
+                        ? "Vị trí phát hiện"
+                        : "Location detected"}
+                    </p>
+                    <p
+                      className={`text-[14px] font-medium mt-0.5 truncate ${
+                        theme === "dark" ? "text-white" : "text-slate-900"
                       }`}
                     >
                       {language === "vi"
                         ? `${selectedProvince.cropVi} · ${selectedProvince.nameVi}`
                         : `${selectedProvince.crop} · ${selectedProvince.name}`}
                     </p>
-                    <div className="flex items-center gap-2 mt-1">
+                  </div>
+
+                  {/* Yield & Arrow */}
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <div className="text-right">
+                      <span className="text-emerald-500 text-[18px] font-bold">
+                        {selectedProvince.yield}
+                      </span>
                       <span
-                        className={`text-[14px] font-medium ${
-                          theme === "dark" ? "text-white" : "text-slate-900"
+                        className={`text-[12px] ml-0.5 ${
+                          theme === "dark" ? "text-white/40" : "text-slate-400"
                         }`}
                       >
-                        {language === "vi" ? "Năng suất:" : "Yield:"}
-                      </span>
-                      <span className="text-emerald-500 text-[16px] font-semibold">
-                        {selectedProvince.yield} t/ha
-                      </span>
-                      <div className="w-1 h-1 rounded-full bg-emerald-400 ml-1"></div>
-                      <span className="text-[9px] text-emerald-500 uppercase tracking-wider">
-                        {language === "vi" ? "Dự đoán AI" : "AI Forecast"}
+                        t/ha
                       </span>
                     </div>
+                    <svg
+                      className={`w-4 h-4 ${
+                        theme === "dark" ? "text-white/30" : "text-slate-400"
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           )}
         </div>
