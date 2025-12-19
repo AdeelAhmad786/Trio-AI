@@ -65,10 +65,8 @@ Mô hình được đánh giá bằng walk-forward validation và Leave-One-Year
 
 https://drive.google.com/file/d/1PCiZJN6SZmNzdGBmOJdQKcBeiOcm2NXB/view?usp=sharing
 
-## Team & Authors
+## Tác Giả
 
 - **Nguyễn Hoàng Tùng** – Machine Learning, Full-stack Developer
-- **Tăng Tuấn Việt** – Data & Research
-- **Lê Thị Nga** – Data & Research
 
 
